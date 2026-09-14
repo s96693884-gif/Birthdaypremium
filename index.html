@@ -621,7 +621,7 @@
         function applyCardData(data) {
             const photos = Array.isArray(data.photoUrls) ? data.photoUrls.filter(Boolean) : [];
             const name = (data.name || '').trim();
-            const message = (data.message || '').trim();
+            const message = (data.memory || '').trim();
 
             // Passcode: unlocks the lock screen + updates the hint popup text
             const passcode = (data.passcode || '').trim();
